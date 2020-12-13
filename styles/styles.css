@@ -1,0 +1,6 @@
+.SelectMenu-modal, .dropdown-menu, .Popover-message.Box {
+    backdrop-filter: blur(16px);
+}
+.SelectMenu-item, .SelectMenu-list{
+    background-color: transparent;
+}
