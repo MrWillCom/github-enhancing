@@ -1,0 +1,6 @@
+{
+    "scripts": {
+        "init": "node init.js",
+        "build": "node build.js"
+    }
+}
