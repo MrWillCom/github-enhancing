@@ -1,6 +1,19 @@
-.SelectMenu-modal, .dropdown-menu, .Popover-message.Box {
+:root {
+    --color-fade-black-50: transparent;
+}
+
+.SelectMenu-modal, .dropdown-menu, .Popover-message.Box, .Box--overlay {
     backdrop-filter: blur(16px);
 }
-.SelectMenu-item, .SelectMenu-list{
+
+.SelectMenu-item, .SelectMenu-list {
     background-color: transparent;
+}
+
+.Box--overlay {
+    background-color: var(--color-bg-overlay);
+}
+
+.Box--overlay * {
+    --color-bg-primary: transparent!important;
 }
