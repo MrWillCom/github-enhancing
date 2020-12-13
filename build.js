@@ -17,5 +17,5 @@ const release = `(() => {
 })()`
 
 console.log('Writing release...')
-fs.writeFileSync('./js/index.js', release, { encoding: 'utf8' })
+fs.writeFileSync('./index.js', release, { encoding: 'utf8' })
 console.log('Completed.')
