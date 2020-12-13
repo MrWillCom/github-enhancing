@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "GitHub Enhancing",
-    "version": "0.0.0",
+    "version": "0.0.1",
     "description": "The Enhanced GitHub Theme.",
     "content_scripts": [
         {
