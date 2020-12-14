@@ -4,6 +4,7 @@
 
 .SelectMenu-modal, .dropdown-menu, .Popover-message.Box, .Box--overlay, .select-menu-modal {
     backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
 }
 
 .SelectMenu-item, .SelectMenu-list {
