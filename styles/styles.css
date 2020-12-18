@@ -17,6 +17,7 @@
 
 .Box--overlay * {
     --color-bg-primary: transparent!important;
+}
 
 .SelectMenu--hasFilter .SelectMenu-modal {
     margin-top: auto;
@@ -26,4 +27,24 @@
 .SelectMenu {
     padding: 8px;
 }
+
+.SelectMenu-tab {
+    margin: 4px 2px;
+    border-radius: 6px;
+}
+
+.SelectMenu-tab[aria-selected=true] {
+    box-shadow: 0 4px 12px #0002;
+}
+
+@media (prefers-color-scheme: dark) {
+    [data-color-mode=auto] .SelectMenu-tab[aria-selected=true] {
+        border-color: transparent;
+        background-color: #30363d;
+    }
+}
+
+[data-color-mode=dark] .SelectMenu-tab[aria-selected=true] {
+    border-color: transparent;
+    background-color: #30363d;
 }
