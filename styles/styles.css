@@ -17,4 +17,13 @@
 
 .Box--overlay * {
     --color-bg-primary: transparent!important;
+
+.SelectMenu--hasFilter .SelectMenu-modal {
+    margin-top: auto;
+    margin-bottom: 0;
+}
+
+.SelectMenu {
+    padding: 8px;
+}
 }
