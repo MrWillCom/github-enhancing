@@ -2,7 +2,7 @@
     --color-fade-black-50: transparent;
 }
 
-.SelectMenu-modal, .dropdown-menu, .Popover-message.Box, .Box--overlay, .select-menu-modal, .autocomplete-results {
+.SelectMenu-modal, .dropdown-menu, .Popover-message.Box, .Box--overlay, .select-menu-modal, .autocomplete-results, .suggester {
     backdrop-filter: blur(16px);
     -webkit-backdrop-filter: blur(16px);
 }
