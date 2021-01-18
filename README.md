@@ -38,6 +38,29 @@ This extension is made up of 3 stylesheets and can be packed together by `build.
 
 #### `styles/light.css`
 
+This file only includes variables, and will be active in light mode.
+
+```css
+--...: ...;
+...
+```
+
 #### `styles/dark.css`
 
+Only includes variables, active in dark mode.
+
 #### `styles/styles.css`
+
+This file is a complete CSS file, it manages acrylic effects and layouts. If you are add something unable to add to `light/dark.css`, add it here.
+
+```css
+... {
+    ...: ...;
+    ...
+}
+...
+```
+
+### Scripts
+
+`js/main.js` manages all JavaScript actions except rendering stylesheets. Any scripts should be here.
