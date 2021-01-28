@@ -48,3 +48,14 @@
     border-color: transparent;
     background-color: #30363d;
 }
+
+@keyframes fadein-scalein {
+    0% {
+        transform: scale(.95);
+        opacity: 0;
+    }
+}
+
+.Popover-message.Box, details>*:not(summary), .autocomplete-results, .suggester, .anim-scale-in {
+    animation: fadein-scalein .15s cubic-bezier(0, 0.5, 0.5, 1);
+}
