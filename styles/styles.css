@@ -37,16 +37,31 @@
     box-shadow: 0 4px 12px #0002;
 }
 
+.user-status-circle-badge {
+    --color-bg-primary: #fff4;
+    --color-border-primary: #fff1;
+    backdrop-filter: blur(16px);
+}
+
 @media (prefers-color-scheme: dark) {
     [data-color-mode=auto] .SelectMenu-tab[aria-selected=true] {
         border-color: transparent;
         background-color: #30363d;
+    }
+    [data-color-mode=auto] .user-status-circle-badge {
+        --color-bg-primary: #0004;
+        --color-border-primary: #0001;
     }
 }
 
 [data-color-mode=dark] .SelectMenu-tab[aria-selected=true] {
     border-color: transparent;
     background-color: #30363d;
+}
+
+[data-color-mode=dark] .user-status-circle-badge {
+    --color-bg-primary: #0004;
+    --color-border-primary: #0001;
 }
 
 @keyframes fadein-scalein {
