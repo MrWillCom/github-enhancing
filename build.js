@@ -1,10 +1,11 @@
+const CleanCSS = require('clean-css');
 const fs = require('fs')
 
 console.log('Building release...')
 
-const light = fs.readFileSync('./styles/light.css', { encoding: 'utf8' })
-const dark = fs.readFileSync('./styles/dark.css', { encoding: 'utf8' })
-const styles = fs.readFileSync('./styles/styles.css', { encoding: 'utf8' })
+const light = new CleanCSS().minify(fs.readFileSync('./styles/light.css', { encoding: 'utf8' })).styles
+const dark = new CleanCSS().minify(fs.readFileSync('./styles/dark.css', { encoding: 'utf8' })).styles
+const styles = new CleanCSS().minify(fs.readFileSync('./styles/styles.css', { encoding: 'utf8' })).styles
 const scripts = fs.readFileSync('./js/main.js', {encoding: 'utf8'})
 
 const release = `(() => {

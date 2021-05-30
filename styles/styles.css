@@ -74,3 +74,24 @@
 .Popover-message.Box, details>*:not(summary), .autocomplete-results, .suggester, .anim-scale-in {
     animation: fadein-scalein .15s cubic-bezier(0, 0.5, 0.5, 1);
 }
+
+.avatar {
+    transition: all 0.25s cubic-bezier(0, 0, 0, 1);
+}
+
+.avatar:hover {
+    transform: scale(1.5) translate(0, -10%);
+    box-shadow: 0 8px 24px #0004;
+}
+
+.js-pinned-item-list-item.Box:hover {
+    background-color: var(--color-bg-secondary);
+}
+
+.Box-row--focus-gray.navigation-focus {
+    background-color: transparent;
+}
+
+.Box-row:hover {
+    background-color: var(--color-bg-secondary);
+}

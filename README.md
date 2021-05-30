@@ -26,6 +26,8 @@ Before start testing this extension, you need to install [Node.js](https://nodej
 Building this extension doesn't require much, just run following command with Node.js .
 
 ```sh
+# Install deps
+npm install
 # Run build script with Node.js
 node build.js
 # or using `npm` scripts
