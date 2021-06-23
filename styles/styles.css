@@ -75,11 +75,30 @@
     animation: fadein-scalein .15s cubic-bezier(0, 0.5, 0.5, 1);
 }
 
-.avatar {
+[data-gheh-section-type="releases"] .Link--primary.d-flex.no-underline {
+    width: calc(100% + 16px);
+    margin-left: -8px;
+    padding: 4px 8px;
+    border-radius: 6px;
+    border: 1px solid;
+    border-color: transparent;
+}
+
+[data-gheh-section-type="releases"] .Link--primary.d-flex.no-underline:hover {
+    background-color: var(--color-btn-hover-bg);
+    border-color: var(--color-btn-hover-border);
+}
+
+[data-gheh-section-type="releases"] .Link--primary.d-flex.no-underline:active {
+    background-color: var(--color-btn-active-bg);
+    border-color: var(--color-btn-active-border);
+}
+
+.avatar, .avatar-user {
     transition: all 0.25s cubic-bezier(0, 0, 0, 1);
 }
 
-.avatar:hover {
+.avatar:hover, .avatar-user:hover {
     transform: scale(1.5) translate(0, -10%);
     box-shadow: 0 8px 24px #0004;
 }
