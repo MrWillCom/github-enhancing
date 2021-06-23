@@ -82,15 +82,16 @@
     border-radius: 6px;
     border: 1px solid;
     border-color: transparent;
+    transition: .2s cubic-bezier(.3, 0, .5, 1);
+    transition-property: color, background-color, border-color;
 }
 
 [data-gheh-section-type="releases"] .Link--primary.d-flex.no-underline:hover {
-    background-color: var(--color-btn-hover-bg);
-    border-color: var(--color-btn-hover-border);
+    border-color: var(--color-btn-border);
 }
 
 [data-gheh-section-type="releases"] .Link--primary.d-flex.no-underline:active {
-    background-color: var(--color-btn-active-bg);
+    background-color: var(--color-btn-hover-bg);
     border-color: var(--color-btn-active-border);
 }
 
